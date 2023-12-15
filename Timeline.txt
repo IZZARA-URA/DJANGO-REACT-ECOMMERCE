@@ -1,0 +1,12 @@
+0) setting env
+1) setting up project environment
+2) Secret key Generation
+    - from django.core.management.utils import get_secret_key
+
+3) Configuration Environment Variables
+    - security python-dotenv
+
+4) setting djangorestframework
+5) setting pytest and environment for testing
+6) setting github desktop 
+7) black formatter

@@ -1,0 +1,24 @@
+appmap_dir: tmp\appmap
+language: python
+name: env
+packages:
+- path: rest_framework
+- path: django_filters
+- path: dotenv
+- path: tzdata
+- path: _distutils_hack
+- path: asgiref
+- path: sqlparse
+- path: django
+- path: _pytest
+- path: pluggy
+- path: iniconfig
+- path: pytz
+- path: markdown
+- path: pytest
+- path: colorama
+- path: pkg_resources
+- path: packaging
+- path: pip
+- path: pytest_django
+- path: setuptools

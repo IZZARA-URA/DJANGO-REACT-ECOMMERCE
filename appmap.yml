@@ -1,0 +1,6 @@
+appmap_dir: tmp\appmap
+language: python
+name: react_django_e_comerce
+packages:
+- path: backend
+- path: api
