@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /adpi",
+    "parameters": "()",
+    "status": 404
+  }
+]

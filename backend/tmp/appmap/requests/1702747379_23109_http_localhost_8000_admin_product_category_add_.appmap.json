@@ -1,0 +1,4209 @@
+{
+  "events": [
+    {
+      "http_server_request": {
+        "request_method": "GET",
+        "protocol": "HTTP/1.1",
+        "path_info": "/admin/product/category/add/",
+        "normalized_path_info": "/admin/product/category/add/",
+        "mime_type": "text/plain",
+        "headers": {
+          "Content-Length": "",
+          "Content-Type": "text/plain",
+          "Host": "localhost:8000",
+          "Connection": "keep-alive",
+          "Sec-Ch-Ua": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "Sec-Ch-Ua-Platform": "\"Windows\"",
+          "Upgrade-Insecure-Requests": "1",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "Sec-Fetch-Site": "same-origin",
+          "Sec-Fetch-Mode": "navigate",
+          "Sec-Fetch-User": "?1",
+          "Sec-Fetch-Dest": "document",
+          "Referer": "http://localhost:8000/admin/product/category/",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9,th;q=0.8",
+          "Cookie": "csrftoken=fjok0Ajm0dWx6m1X9x4B1KgysNkK8n5g; sessionid=tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj"
+        }
+      },
+      "id": 1,
+      "event": "call",
+      "thread_id": 5
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 17:22:59.177090' AND \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj') LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 2,
+      "event": "call",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 2,
+      "elapsed": 0,
+      "id": 3,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 4,
+      "event": "call",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 4,
+      "elapsed": 0,
+      "id": 5,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901487966864,
+        "value": "<django.contrib.auth.backends.ModelBackend object at 0x000001BAB983CA90>",
+        "name": "self",
+        "class": "django.contrib.auth.backends.ModelBackend"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488301712,
+          "value": "<User: admin>",
+          "name": "user",
+          "class": "django.contrib.auth.models.User"
+        }
+      ],
+      "id": 6,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.backends.ModelBackend",
+      "method_id": "user_can_authenticate",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py",
+      "lineno": 55
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 6,
+      "elapsed": 0,
+      "id": 7,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "sql_query": {
+        "sql": "BEGIN",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 8,
+      "event": "call",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 8,
+      "elapsed": 0,
+      "id": 9,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 10,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488018320,
+          "value": "'product.add_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 11,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 11,
+      "elapsed": 0,
+      "id": 12,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 10,
+      "elapsed": 0,
+      "id": 13,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 14,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901487539584,
+          "value": "'product.add_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 15,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 15,
+      "elapsed": 0,
+      "id": 16,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 14,
+      "elapsed": 0,
+      "id": 17,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 18,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_change_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 547
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488019840,
+          "value": "'product.change_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 19,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 19,
+      "elapsed": 0,
+      "id": 20,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 18,
+      "elapsed": 0,
+      "id": 21,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 22,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_delete_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 562
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488020320,
+          "value": "'product.delete_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 23,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 23,
+      "elapsed": 0,
+      "id": 24,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 22,
+      "elapsed": 0.001008749008178711,
+      "id": 25,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 26,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_view_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 577
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488020800,
+          "value": "'product.view_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 27,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 27,
+      "elapsed": 0,
+      "id": 28,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 26,
+      "elapsed": 0.0009930133819580078,
+      "id": 29,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 30,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488021840,
+          "value": "'product.add_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 31,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 31,
+      "elapsed": 0,
+      "id": 32,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 30,
+      "elapsed": 0,
+      "id": 33,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 34,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_change_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 547
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488022160,
+          "value": "'product.change_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 35,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 35,
+      "elapsed": 0,
+      "id": 36,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 34,
+      "elapsed": 0,
+      "id": 37,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 38,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_delete_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 562
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488022640,
+          "value": "'product.delete_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 39,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 39,
+      "elapsed": 0,
+      "id": 40,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 38,
+      "elapsed": 0,
+      "id": 41,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 42,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_view_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 577
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488023120,
+          "value": "'product.view_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 43,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 43,
+      "elapsed": 0,
+      "id": 44,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 42,
+      "elapsed": 0,
+      "id": 45,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 46,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901487802528,
+          "value": "'product.add_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 47,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 47,
+      "elapsed": 0,
+      "id": 48,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 46,
+      "elapsed": 0,
+      "id": 49,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901451841904,
+          "value": "'auth'",
+          "name": "app_label",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 50,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 322
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 50,
+      "elapsed": 0,
+      "id": 51,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901452870352,
+        "value": "<GroupAdmin: model=Group site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.auth.admin.GroupAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 52,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901487494448,
+          "value": "'auth.add_group'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 53,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 53,
+      "elapsed": 0,
+      "id": 54,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 52,
+      "elapsed": 0.0009980201721191406,
+      "id": 55,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901452870352,
+        "value": "<GroupAdmin: model=Group site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.auth.admin.GroupAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 56,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_change_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 547
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488019280,
+          "value": "'auth.change_group'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 57,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 57,
+      "elapsed": 0,
+      "id": 58,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 56,
+      "elapsed": 0,
+      "id": 59,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901452870352,
+        "value": "<GroupAdmin: model=Group site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.auth.admin.GroupAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 60,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_delete_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 562
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901487801968,
+          "value": "'auth.delete_group'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 61,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 61,
+      "elapsed": 0,
+      "id": 62,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 60,
+      "elapsed": 0.0009999275207519531,
+      "id": 63,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901452870352,
+        "value": "<GroupAdmin: model=Group site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.auth.admin.GroupAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 64,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_view_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 577
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901487851760,
+          "value": "'auth.view_group'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 65,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 65,
+      "elapsed": 0,
+      "id": 66,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 64,
+      "elapsed": 0,
+      "id": 67,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901451841904,
+          "value": "'auth'",
+          "name": "app_label",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 68,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 322
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 68,
+      "elapsed": 0,
+      "id": 69,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471510800,
+        "value": "<UserAdmin: model=User site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.auth.admin.UserAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 70,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488299888,
+          "value": "'auth.add_user'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 71,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 71,
+      "elapsed": 0,
+      "id": 72,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 70,
+      "elapsed": 0,
+      "id": 73,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471510800,
+        "value": "<UserAdmin: model=User site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.auth.admin.UserAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 74,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_change_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 547
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488025520,
+          "value": "'auth.change_user'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 75,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 75,
+      "elapsed": 0,
+      "id": 76,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 74,
+      "elapsed": 0,
+      "id": 77,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471510800,
+        "value": "<UserAdmin: model=User site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.auth.admin.UserAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 78,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_delete_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 562
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488026000,
+          "value": "'auth.delete_user'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 79,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 79,
+      "elapsed": 0,
+      "id": 80,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 78,
+      "elapsed": 0.0010042190551757812,
+      "id": 81,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471510800,
+        "value": "<UserAdmin: model=User site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.auth.admin.UserAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 82,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_view_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 577
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901487919984,
+          "value": "'auth.view_user'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 83,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 83,
+      "elapsed": 0,
+      "id": 84,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 82,
+      "elapsed": 0,
+      "id": 85,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901452396976,
+          "value": "'product'",
+          "name": "app_label",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 86,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 322
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 86,
+      "elapsed": 0,
+      "id": 87,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471559376,
+        "value": "<ModelAdmin: model=Brand site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 88,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488027360,
+          "value": "'product.add_brand'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 89,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 89,
+      "elapsed": 0,
+      "id": 90,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 88,
+      "elapsed": 0,
+      "id": 91,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471559376,
+        "value": "<ModelAdmin: model=Brand site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 92,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_change_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 547
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488027680,
+          "value": "'product.change_brand'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 93,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 93,
+      "elapsed": 0,
+      "id": 94,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 92,
+      "elapsed": 0,
+      "id": 95,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471559376,
+        "value": "<ModelAdmin: model=Brand site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 96,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_delete_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 562
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488028160,
+          "value": "'product.delete_brand'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 97,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 97,
+      "elapsed": 0,
+      "id": 98,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 96,
+      "elapsed": 0,
+      "id": 99,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471559376,
+        "value": "<ModelAdmin: model=Brand site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 100,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_view_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 577
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488028640,
+          "value": "'product.view_brand'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 101,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 101,
+      "elapsed": 0,
+      "id": 102,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 100,
+      "elapsed": 0,
+      "id": 103,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901452396976,
+          "value": "'product'",
+          "name": "app_label",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 104,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 322
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 104,
+      "elapsed": 0,
+      "id": 105,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 106,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488029040,
+          "value": "'product.add_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 107,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 107,
+      "elapsed": 0,
+      "id": 108,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 106,
+      "elapsed": 0,
+      "id": 109,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 110,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_change_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 547
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488209968,
+          "value": "'product.change_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 111,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 111,
+      "elapsed": 0,
+      "id": 112,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 110,
+      "elapsed": 0,
+      "id": 113,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 114,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_delete_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 562
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488210448,
+          "value": "'product.delete_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 115,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 115,
+      "elapsed": 0,
+      "id": 116,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 114,
+      "elapsed": 0,
+      "id": 117,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 118,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_view_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 577
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488210928,
+          "value": "'product.view_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 119,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 119,
+      "elapsed": 0,
+      "id": 120,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 118,
+      "elapsed": 0,
+      "id": 121,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901452396976,
+          "value": "'product'",
+          "name": "app_label",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 122,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 322
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 122,
+      "elapsed": 0,
+      "id": 123,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471561232,
+        "value": "<ModelAdmin: model=Product site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 124,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488211808,
+          "value": "'product.add_product'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 125,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 125,
+      "elapsed": 0,
+      "id": 126,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 124,
+      "elapsed": 0,
+      "id": 127,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471561232,
+        "value": "<ModelAdmin: model=Product site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 128,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_change_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 547
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488212128,
+          "value": "'product.change_product'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 129,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 129,
+      "elapsed": 0,
+      "id": 130,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 128,
+      "elapsed": 0.0009908676147460938,
+      "id": 131,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471561232,
+        "value": "<ModelAdmin: model=Product site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 132,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_delete_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 562
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488212608,
+          "value": "'product.delete_product'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 133,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 133,
+      "elapsed": 0,
+      "id": 134,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 132,
+      "elapsed": 0,
+      "id": 135,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471561232,
+        "value": "<ModelAdmin: model=Product site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 136,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_view_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 577
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488213088,
+          "value": "'product.view_product'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 137,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 137,
+      "elapsed": 0,
+      "id": 138,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 136,
+      "elapsed": 0,
+      "id": 139,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 140,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_view_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 577
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488213568,
+          "value": "'product.view_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 141,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 141,
+      "elapsed": 0,
+      "id": 142,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 140,
+      "elapsed": 0,
+      "id": 143,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 144,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488214288,
+          "value": "'product.add_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 145,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 145,
+      "elapsed": 0,
+      "id": 146,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 144,
+      "elapsed": 0,
+      "id": 147,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 148,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_change_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 547
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488214608,
+          "value": "'product.change_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 149,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 149,
+      "elapsed": 0,
+      "id": 150,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 148,
+      "elapsed": 0.0009984970092773438,
+      "id": 151,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901471560336,
+        "value": "<ModelAdmin: model=Category site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488277584,
+          "value": "<WSGIRequest: GET '/admin/product/category/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 152,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_delete_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 562
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 1901488301712,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 1901488215088,
+          "value": "'product.delete_category'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 153,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 153,
+      "elapsed": 0,
+      "id": 154,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 152,
+      "elapsed": 0,
+      "id": 155,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"django_content_type\".\"id\", \"django_content_type\".\"app_label\", \"django_content_type\".\"model\" FROM \"django_content_type\" WHERE (\"django_content_type\".\"app_label\" = 'product' AND \"django_content_type\".\"model\" = 'category') LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 156,
+      "event": "call",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 156,
+      "elapsed": 0,
+      "id": 157,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901486964112,
+        "value": "<Template template_string=\"{% extends \"admin/ba...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\templates\\admin\\change_form.html",
+      "id": 158,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_FormHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 1901482906704,
+        "value": "<Template template_string=\"{% load i18n %}<but...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\templates\\admin\\color_theme_toggle.html",
+      "id": 159,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminColor_Theme_ToggleHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 159,
+      "elapsed": 0,
+      "id": 160,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901482705936,
+        "value": "<Template template_string=\"{% load i18n %}<but...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\templates\\admin\\nav_sidebar.html",
+      "id": 161,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminNav_SidebarHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 1901485713808,
+        "value": "<Template template_string=\"{% load i18n %}{% ...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\templates\\admin\\app_list.html",
+      "id": 162,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminApp_ListHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 162,
+      "elapsed": 0,
+      "id": 163,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 161,
+      "elapsed": 0,
+      "id": 164,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901487417552,
+        "value": "<Template template_string=\"<fieldset class=\"mod...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\templates\\admin\\includes\\fieldset.html",
+      "id": 165,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 1901483066704,
+        "value": "<Template template_string=\"{% if errors %}<ul c...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\errors\\list\\ul.html",
+      "id": 166,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListUlHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 166,
+      "elapsed": 0,
+      "id": 167,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901483066704,
+        "value": "<Template template_string=\"{% if errors %}<ul c...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\errors\\list\\ul.html",
+      "id": 168,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListUlHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 168,
+      "elapsed": 0,
+      "id": 169,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901479334032,
+        "value": "<Template template_string=\"{% if use_tag %}<{{ ...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\label.html",
+      "id": 170,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsLabelHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 1901483094352,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\attrs.html",
+      "id": 171,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 171,
+      "elapsed": 0,
+      "id": 172,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 170,
+      "elapsed": 0,
+      "id": 173,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901482659280,
+        "value": "<Template template_string=\"{% include \"django/f...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\text.html",
+      "id": 174,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsTextHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 1901483123536,
+        "value": "<Template template_string=\"<input type=\"{{ widg...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\input.html",
+      "id": 175,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsInputHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 1901483128720,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\attrs.html",
+      "id": 176,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 176,
+      "elapsed": 0,
+      "id": 177,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 175,
+      "elapsed": 0,
+      "id": 178,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 174,
+      "elapsed": 0,
+      "id": 179,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901483066704,
+        "value": "<Template template_string=\"{% if errors %}<ul c...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\errors\\list\\ul.html",
+      "id": 180,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListUlHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 180,
+      "elapsed": 0,
+      "id": 181,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901483066704,
+        "value": "<Template template_string=\"{% if errors %}<ul c...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\errors\\list\\ul.html",
+      "id": 182,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListUlHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 182,
+      "elapsed": 0,
+      "id": 183,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901479334032,
+        "value": "<Template template_string=\"{% if use_tag %}<{{ ...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\label.html",
+      "id": 184,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsLabelHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 1901483094352,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\attrs.html",
+      "id": 185,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 185,
+      "elapsed": 0,
+      "id": 186,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 184,
+      "elapsed": 0,
+      "id": 187,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"product_category\".\"id\", \"product_category\".\"name\", \"product_category\".\"parent_id\", \"product_category\".\"lft\", \"product_category\".\"rght\", \"product_category\".\"tree_id\", \"product_category\".\"level\" FROM \"product_category\" ORDER BY \"product_category\".\"tree_id\" ASC, \"product_category\".\"lft\" ASC",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 188,
+      "event": "call",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 188,
+      "elapsed": 0,
+      "id": 189,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901486882384,
+        "value": "<Template template_string=\"<select name=\"{{ wid...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\select.html",
+      "id": 190,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 1901483128720,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\attrs.html",
+      "id": 191,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 191,
+      "elapsed": 0,
+      "id": 192,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901487591504,
+        "value": "<Template template_string=\"<option value=\"{{ wi...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\select_option.html",
+      "id": 193,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 1901483128720,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\attrs.html",
+      "id": 194,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 194,
+      "elapsed": 0,
+      "id": 195,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 193,
+      "elapsed": 0,
+      "id": 196,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 190,
+      "elapsed": 0,
+      "id": 197,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901487520656,
+        "value": "<Template template_string=\"{% load i18n static ...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\templates\\admin\\widgets\\related_widget_wrapper.html",
+      "id": 198,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminWidgetsRelated_Widget_WrapperHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 198,
+      "elapsed": 0,
+      "id": 199,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 165,
+      "elapsed": 0.01600000006146729,
+      "id": 200,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901487416784,
+        "value": "<Template template_string=\"{% load i18n admin_u...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\templates\\admin\\submit_line.html",
+      "id": 201,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminSubmit_LineHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 201,
+      "elapsed": 0,
+      "id": 202,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "receiver": {
+        "object_id": 1901487659280,
+        "value": "<Template template_string=\"{% load static %}<s...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\templates\\admin\\prepopulated_fields_js.html",
+      "id": 203,
+      "event": "call",
+      "thread_id": 5,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminPrepopulated_Fields_JsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 203,
+      "elapsed": 0,
+      "id": 204,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "parent_id": 158,
+      "elapsed": 0.01600000006146729,
+      "id": 205,
+      "event": "return",
+      "thread_id": 5
+    },
+    {
+      "http_server_response": {
+        "status_code": 200,
+        "mime_type": "text/html; charset=utf-8",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8",
+          "Expires": "Sat, 16 Dec 2023 17:22:59 GMT",
+          "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+          "Vary": "Cookie",
+          "X-Frame-Options": "DENY",
+          "Content-Length": "10698",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "parent_id": 1,
+      "elapsed": 0.06300000008195639,
+      "id": 206,
+      "event": "return",
+      "thread_id": 5
+    }
+  ],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.11.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "https://github.com/IZZARA-URA/DJANGO-REACT-ECOMMERCE.git",
+      "branch": "main",
+      "commit": "b3c1cb712dcd284715a76497c6b2cd833dea647e"
+    },
+    "frameworks": [
+      {
+        "name": "Django",
+        "version": "4.2.7"
+      }
+    ],
+    "name": "GET /admin/product/category/add/ (200) - 00:22:59.231",
+    "timestamp": 1702747379.23109,
+    "recorder": {
+      "name": "record_requests"
+    }
+  },
+  "classMap": [
+    {
+      "name": "django",
+      "type": "package",
+      "children": [
+        {
+          "name": "contrib",
+          "type": "package",
+          "children": [
+            {
+              "name": "auth",
+              "type": "package",
+              "children": [
+                {
+                  "name": "backends",
+                  "type": "package",
+                  "children": [
+                    {
+                      "name": "ModelBackend",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "user_can_authenticate",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py:55"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "models",
+                  "type": "package",
+                  "children": [
+                    {
+                      "name": "PermissionsMixin",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "has_perm",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py:298"
+                        },
+                        {
+                          "name": "has_module_perms",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py:322"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "admin",
+              "type": "package",
+              "children": [
+                {
+                  "name": "options",
+                  "type": "package",
+                  "children": [
+                    {
+                      "name": "BaseModelAdmin",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "has_add_permission",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py:538"
+                        },
+                        {
+                          "name": "has_change_permission",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py:547"
+                        },
+                        {
+                          "name": "has_delete_permission",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py:562"
+                        },
+                        {
+                          "name": "has_view_permission",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py:577"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /admin/product/category/add/"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 17:22:59.177090' AND \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj') LIMIT 21"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21"
+        },
+        {
+          "type": "query",
+          "name": "BEGIN"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"django_content_type\".\"id\", \"django_content_type\".\"app_label\", \"django_content_type\".\"model\" FROM \"django_content_type\" WHERE (\"django_content_type\".\"app_label\" = 'product' AND \"django_content_type\".\"model\" = 'category') LIMIT 21"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"product_category\".\"id\", \"product_category\".\"name\", \"product_category\".\"parent_id\", \"product_category\".\"lft\", \"product_category\".\"rght\", \"product_category\".\"tree_id\", \"product_category\".\"level\" FROM \"product_category\" ORDER BY \"product_category\".\"tree_id\" ASC, \"product_category\".\"lft\" ASC"
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_FormHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminColor_Theme_ToggleHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminNav_SidebarHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminApp_ListHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListUlHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsLabelHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsAttrsHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsTextHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsInputHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminWidgetsRelated_Widget_WrapperHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminSubmit_LineHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminPrepopulated_Fields_JsHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    }
+  ]
+}

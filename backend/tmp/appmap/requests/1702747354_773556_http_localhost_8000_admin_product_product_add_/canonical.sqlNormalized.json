@@ -1,0 +1,8 @@
+[
+  "BEGIN",
+  "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = ? LIMIT ?",
+  "SELECT \"django_content_type\".\"id\", \"django_content_type\".\"app_label\", \"django_content_type\".\"model\" FROM \"django_content_type\" WHERE (\"django_content_type\".\"app_label\" = ? AND \"django_content_type\".\"model\" = ?) LIMIT ?",
+  "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > ? AND \"django_session\".\"session_key\" = ?) LIMIT ?",
+  "SELECT \"product_brand\".\"id\", \"product_brand\".\"name\" FROM \"product_brand\"",
+  "SELECT \"product_category\".\"id\", \"product_category\".\"name\", \"product_category\".\"parent_id\", \"product_category\".\"lft\", \"product_category\".\"rght\", \"product_category\".\"tree_id\", \"product_category\".\"level\" FROM \"product_category\" ORDER BY \"product_category\".\"tree_id\" ASC, \"product_category\".\"lft\" ASC"
+]

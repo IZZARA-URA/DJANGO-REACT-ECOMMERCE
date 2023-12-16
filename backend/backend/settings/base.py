@@ -19,11 +19,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # External framwork
     "rest_framework",
-    
-    # Internal framwork
-    
-    # Local application
-    "api"
+    "drf_spectacular",
+    # Intenal Apps
+    "backend.product",
 ]
 
 MIDDLEWARE = [
@@ -101,4 +99,10 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-REST_FRAMEWORK = { }
+REST_FRAMEWORK = { 
+    'DEFAULT_SCHEMA_CLASS':'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR = {
+    'TITLE': 'Django DRF Ecommerce',
+}

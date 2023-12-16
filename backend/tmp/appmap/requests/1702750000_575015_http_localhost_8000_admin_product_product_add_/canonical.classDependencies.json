@@ -1,0 +1,42 @@
+[
+  {
+    "caller": "POST /admin/product/product/add/",
+    "callee": "BEGIN"
+  },
+  {
+    "caller": "POST /admin/product/product/add/",
+    "callee": "INSERT INTO \"django_admin_log\" (\"action_time\", \"user_id\", \"content_type_id\", \"object_id\", \"object_repr\", \"action_flag\", \"change_message\") VALUES ('2023-12-16 18:06:40.560021', 1, 9, '1', 'Test', 1, '[{\"added\": {}}]') RETURNING \"django_admin_log\".\"id\""
+  },
+  {
+    "caller": "POST /admin/product/product/add/",
+    "callee": "INSERT INTO \"product_product\" (\"name\", \"description\", \"is_digital\", \"brand_id\", \"category_id\") VALUES ('Test', 'test', 0, 1, 1) RETURNING \"product_product\".\"id\""
+  },
+  {
+    "caller": "POST /admin/product/product/add/",
+    "callee": "SELECT 1 AS \"a\" FROM \"product_brand\" WHERE \"product_brand\".\"id\" = 1 LIMIT 1"
+  },
+  {
+    "caller": "POST /admin/product/product/add/",
+    "callee": "SELECT 1 AS \"a\" FROM \"product_category\" WHERE \"product_category\".\"id\" = 1 LIMIT 1"
+  },
+  {
+    "caller": "POST /admin/product/product/add/",
+    "callee": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "POST /admin/product/product/add/",
+    "callee": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 18:06:40.504026' AND \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj') LIMIT 21"
+  },
+  {
+    "caller": "POST /admin/product/product/add/",
+    "callee": "SELECT \"product_brand\".\"id\", \"product_brand\".\"name\" FROM \"product_brand\" WHERE \"product_brand\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "POST /admin/product/product/add/",
+    "callee": "SELECT \"product_category\".\"id\", \"product_category\".\"name\", \"product_category\".\"parent_id\", \"product_category\".\"lft\", \"product_category\".\"rght\", \"product_category\".\"tree_id\", \"product_category\".\"level\" FROM \"product_category\" WHERE \"product_category\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "POST /admin/product/product/add/",
+    "callee": "django/contrib"
+  }
+]

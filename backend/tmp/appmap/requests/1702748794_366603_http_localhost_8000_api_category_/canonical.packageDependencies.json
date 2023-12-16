@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "HTTP server requests",
+    "callee": "Database"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "backend"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "django"
+  },
+  {
+    "caller": "backend",
+    "callee": "Database"
+  }
+]

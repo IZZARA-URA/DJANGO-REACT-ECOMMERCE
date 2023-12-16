@@ -1,0 +1,82 @@
+[
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminActionsHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsHiddenHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminActionsHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminActionsHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_List_Object_ToolsHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_List_ResultsHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminColor_Theme_ToggleHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminNav_SidebarHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminPaginationHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminSearch_FormHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsCheckboxHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminNav_SidebarHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminApp_ListHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsCheckboxHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsInputHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsHiddenHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsInputHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsInputHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "Database"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "django"
+  }
+]

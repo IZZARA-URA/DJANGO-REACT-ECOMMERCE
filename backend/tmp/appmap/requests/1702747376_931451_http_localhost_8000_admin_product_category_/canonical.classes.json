@@ -1,0 +1,13 @@
+[
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminApp_ListHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_List_Object_ToolsHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_List_ResultsHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminColor_Theme_ToggleHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminNav_SidebarHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminPaginationHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminSearch_FormHtml",
+  "django/contrib/admin/options/BaseModelAdmin",
+  "django/contrib/auth/backends/ModelBackend",
+  "django/contrib/auth/models/PermissionsMixin"
+]

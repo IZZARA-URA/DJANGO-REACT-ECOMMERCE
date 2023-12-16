@@ -1,0 +1,27 @@
+{
+  "language": {
+    "name": "python",
+    "engine": "CPython",
+    "version": "3.11.2"
+  },
+  "client": {
+    "name": "appmap",
+    "url": "https://github.com/applandinc/appmap-python"
+  },
+  "git": {
+    "repository": "https://github.com/IZZARA-URA/DJANGO-REACT-ECOMMERCE.git",
+    "branch": "main",
+    "commit": "b3c1cb712dcd284715a76497c6b2cd833dea647e"
+  },
+  "frameworks": [
+    {
+      "name": "Django",
+      "version": "4.2.7"
+    }
+  ],
+  "name": "GET /admin/jsi18n/ (200) - 00:24:12.688",
+  "timestamp": 1702747452.688239,
+  "recorder": {
+    "name": "record_requests"
+  }
+}

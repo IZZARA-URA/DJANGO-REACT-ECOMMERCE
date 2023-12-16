@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/schema/",
+    "parameters": "()",
+    "status": 200
+  }
+]

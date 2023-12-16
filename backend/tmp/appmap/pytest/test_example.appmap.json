@@ -1,0 +1,38 @@
+{
+  "events": [],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.11.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "https://github.com/IZZARA-URA/DJANGO-REACT-ECOMMERCE.git",
+      "branch": "main",
+      "commit": "b3c1cb712dcd284715a76497c6b2cd833dea647e"
+    },
+    "frameworks": [
+      {
+        "name": "pytest",
+        "version": "7.4.3"
+      }
+    ],
+    "recording": {
+      "source_location": "..\\..\\..\\..\\Desktop\\you\\react_django_e_comerce\\backend\\backend\\tests\\test_example.py:2"
+    },
+    "name": "example",
+    "feature": "Example",
+    "app": "backend",
+    "recorder": {
+      "name": "pytest",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": []
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /admin/product/brand/add/",
+    "parameters": "(csrfmiddlewaretoken,name,_save)",
+    "status": 302
+  }
+]

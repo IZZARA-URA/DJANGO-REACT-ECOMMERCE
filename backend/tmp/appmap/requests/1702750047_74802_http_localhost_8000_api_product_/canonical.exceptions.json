@@ -1,0 +1,9 @@
+[
+  {
+    "class": "builtins.TypeError",
+    "message": "'Request' object is not iterable",
+    "stack": [
+      "C:\\Users\\hlnatao\\Documents\\GitHub\\DJANGO-REACT-ECOMMERCE\\backend\\backend\\product\\views.py:27"
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /admin/product/category/{object_id}/delete/",
+    "parameters": "(object_id)",
+    "status": 200
+  }
+]

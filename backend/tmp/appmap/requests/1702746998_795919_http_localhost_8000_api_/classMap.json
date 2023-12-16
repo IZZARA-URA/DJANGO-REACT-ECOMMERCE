@@ -1,0 +1,33 @@
+[
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /api/"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 17:16:36.958307' AND \"django_session\".\"session_key\" = 'uoqcr5cumgyifu9fi5j8yaghftdarmg4') LIMIT 21"
+      }
+    ]
+  },
+  {
+    "type": "class",
+    "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkApiHtml",
+    "children": [
+      {
+        "type": "function",
+        "name": "render",
+        "static": false
+      }
+    ]
+  }
+]

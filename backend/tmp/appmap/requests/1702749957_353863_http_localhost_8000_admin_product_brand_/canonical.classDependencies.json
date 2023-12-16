@@ -1,0 +1,54 @@
+[
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_List_Object_ToolsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_List_ResultsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminColor_Theme_ToggleHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminNav_SidebarHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminPaginationHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminSearch_FormHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminNav_SidebarHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminApp_ListHtml#render"
+  },
+  {
+    "caller": "GET /admin/product/brand/",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_ListHtml#render"
+  },
+  {
+    "caller": "GET /admin/product/brand/",
+    "callee": "SELECT COUNT(*) AS \"__count\" FROM \"product_brand\""
+  },
+  {
+    "caller": "GET /admin/product/brand/",
+    "callee": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "GET /admin/product/brand/",
+    "callee": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 18:05:57.289869' AND \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj') LIMIT 21"
+  },
+  {
+    "caller": "GET /admin/product/brand/",
+    "callee": "SELECT \"product_brand\".\"id\", \"product_brand\".\"name\" FROM \"product_brand\" ORDER BY \"product_brand\".\"id\" DESC"
+  },
+  {
+    "caller": "GET /admin/product/brand/",
+    "callee": "django/contrib"
+  }
+]

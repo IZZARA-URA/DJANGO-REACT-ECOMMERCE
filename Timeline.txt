@@ -10,3 +10,40 @@
 5) setting pytest and environment for testing
 6) setting github desktop 
 7) black formatter
+8) Django ne application
+    - python manage.py startapp product ./backend/product
+
+9) database design
+    - product, Brand, product model 
+    - Model field reference
+    - pip install django mptt
+
+10) Seializer
+    Client <--JSON--> Seializer, Django, Database 
+
+11) View 
+12) Router
+    - DefaultRouter 
+    - admin.site.register
+
+12) API Document with Swagger UI 
+    - pip install drf-spectacular 
+    - setting base.py spectacular 
+    - python manage.py spectacular --file schema.yml
+    - urls 
+        - spectacularAPIView
+        - spectacularSwaggerView
+    - views
+        - extend_schema
+
+13) Implimeting Brand
+14) Testing: Coverage HTML Reporting
+    - pip install coverage 
+    - pip install pytest-cov
+    - coverage run -m pytest
+    - pytest --cov
+
+15) Units Test 
+
+16) Model Factories with Factory Boy 
+    - pip install pytest-factoryboy

@@ -1,0 +1,129 @@
+[
+  {
+    "name": "django",
+    "type": "package",
+    "children": [
+      {
+        "name": "contrib",
+        "type": "package",
+        "children": [
+          {
+            "name": "auth",
+            "type": "package",
+            "children": [
+              {
+                "name": "models",
+                "type": "package",
+                "children": [
+                  {
+                    "name": "AnonymousUser",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "has_module_perms",
+                        "type": "function",
+                        "labels": [
+                          "security.authorization"
+                        ],
+                        "static": false,
+                        "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py:487"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "backends",
+                "type": "package",
+                "children": [
+                  {
+                    "name": "ModelBackend",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "has_module_perms",
+                        "type": "function",
+                        "labels": [
+                          "security.authorization"
+                        ],
+                        "static": false,
+                        "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py:115"
+                      },
+                      {
+                        "name": "authenticate",
+                        "type": "function",
+                        "labels": [
+                          "security.authentication"
+                        ],
+                        "static": false,
+                        "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py:40"
+                      },
+                      {
+                        "name": "user_can_authenticate",
+                        "type": "function",
+                        "labels": [
+                          "security.authorization"
+                        ],
+                        "static": false,
+                        "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py:55"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "authenticate",
+                "type": "function",
+                "labels": [
+                  "security.authentication"
+                ],
+                "static": true,
+                "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\__init__.py:63"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /admin/login/"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"username\" = 'admin' LIMIT 21"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS \"a\" FROM \"django_session\" WHERE \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj' LIMIT 1"
+      },
+      {
+        "type": "query",
+        "name": "BEGIN"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"django_session\" (\"session_key\", \"session_data\", \"expire_date\") VALUES ('tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj', 'e30:1rEYMQ:GVxp6CYjD6Jpab72sjfl3JymgSMKkx0RTscJKMAo15o', '2023-12-30 17:21:58.561788')"
+      },
+      {
+        "type": "query",
+        "name": "UPDATE \"auth_user\" SET \"last_login\" = '2023-12-16 17:21:58.568791' WHERE \"auth_user\".\"id\" = 1"
+      },
+      {
+        "type": "query",
+        "name": "UPDATE \"django_session\" SET \"session_data\" = '.eJxVjDsOwjAQRO_iGll2_Kekzxksr3eNA8iR4qRC3J1ESgHFNPPezJvFtK01bp2WOCG7Mskuvx2k_KR2AHykdp95ntu6TMAPhZ-083FGet1O9--gpl73dfFeCkHOagDQ3pqCzjmjBMhgyBaRCILyRfmMQahscE-2aRi0k4Us-3wB1qY3sg:1rEYMQ:wOr4VkqVUaji3Ca1WhkKE6pp1pq41b4qeEfmJ9_3-Zo', \"expire_date\" = '2023-12-30 17:21:58.576794' WHERE \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj'"
+      }
+    ]
+  }
+]

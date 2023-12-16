@@ -1,0 +1,638 @@
+{
+  "events": [
+    {
+      "http_server_request": {
+        "request_method": "POST",
+        "protocol": "HTTP/1.1",
+        "path_info": "/admin/product/brand/add/",
+        "normalized_path_info": "/admin/product/brand/add/",
+        "mime_type": "application/x-www-form-urlencoded",
+        "headers": {
+          "Content-Length": "108",
+          "Content-Type": "application/x-www-form-urlencoded",
+          "Host": "localhost:8000",
+          "Connection": "keep-alive",
+          "Cache-Control": "max-age=0",
+          "Sec-Ch-Ua": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "Sec-Ch-Ua-Platform": "\"Windows\"",
+          "Upgrade-Insecure-Requests": "1",
+          "Origin": "http://localhost:8000",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "Sec-Fetch-Site": "same-origin",
+          "Sec-Fetch-Mode": "navigate",
+          "Sec-Fetch-User": "?1",
+          "Sec-Fetch-Dest": "document",
+          "Referer": "http://localhost:8000/admin/product/brand/add/",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9,th;q=0.8",
+          "Cookie": "csrftoken=fjok0Ajm0dWx6m1X9x4B1KgysNkK8n5g; sessionid=tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj"
+        }
+      },
+      "message": [
+        {
+          "object_id": 2460808804144,
+          "value": "'m6satlSpTc5Vm0R7GU5ZkjxHEkHAR3tbrfGkjL1BJfRiicIUFhZqbTD5WXRaPgoh'",
+          "name": "csrfmiddlewaretoken",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2460823184304,
+          "value": "'Brand-1'",
+          "name": "name",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2460823245488,
+          "value": "'Save'",
+          "name": "_save",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 1,
+      "event": "call",
+      "thread_id": 1
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 18:06:07.478850' AND \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj') LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 2,
+      "event": "call",
+      "thread_id": 1
+    },
+    {
+      "parent_id": 2,
+      "elapsed": 0,
+      "id": 3,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 4,
+      "event": "call",
+      "thread_id": 1
+    },
+    {
+      "parent_id": 4,
+      "elapsed": 0.01500000013038516,
+      "id": 5,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2460819189904,
+        "value": "<django.contrib.auth.backends.ModelBackend object at 0x0000023CF440F090>",
+        "name": "self",
+        "class": "django.contrib.auth.backends.ModelBackend"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2460819059024,
+          "value": "<User: admin>",
+          "name": "user",
+          "class": "django.contrib.auth.models.User"
+        }
+      ],
+      "id": 6,
+      "event": "call",
+      "thread_id": 1,
+      "defined_class": "django.contrib.auth.backends.ModelBackend",
+      "method_id": "user_can_authenticate",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py",
+      "lineno": 55
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 6,
+      "elapsed": 0,
+      "id": 7,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "sql_query": {
+        "sql": "BEGIN",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 8,
+      "event": "call",
+      "thread_id": 1
+    },
+    {
+      "parent_id": 8,
+      "elapsed": 0,
+      "id": 9,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2460800208016,
+        "value": "<ModelAdmin: model=Brand site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2460811956880,
+          "value": "<WSGIRequest: POST '/admin/product/brand/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        }
+      ],
+      "id": 10,
+      "event": "call",
+      "thread_id": 1,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_add_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 538
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2460819059024,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2460823481248,
+          "value": "'product.add_brand'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 11,
+      "event": "call",
+      "thread_id": 1,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 11,
+      "elapsed": 0,
+      "id": 12,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 10,
+      "elapsed": 0,
+      "id": 13,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "sql_query": {
+        "sql": "INSERT INTO \"product_brand\" (\"name\") VALUES ('Brand-1') RETURNING \"product_brand\".\"id\"",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 14,
+      "event": "call",
+      "thread_id": 1
+    },
+    {
+      "parent_id": 14,
+      "elapsed": 0,
+      "id": 15,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "sql_query": {
+        "sql": "INSERT INTO \"django_admin_log\" (\"action_time\", \"user_id\", \"content_type_id\", \"object_id\", \"object_repr\", \"action_flag\", \"change_message\") VALUES ('2023-12-16 18:06:07.500840', 1, 7, '1', 'Brand-1', 1, '[{\"added\": {}}]') RETURNING \"django_admin_log\".\"id\"",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 16,
+      "event": "call",
+      "thread_id": 1
+    },
+    {
+      "parent_id": 16,
+      "elapsed": 0,
+      "id": 17,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2460800208016,
+        "value": "<ModelAdmin: model=Brand site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2460811956880,
+          "value": "<WSGIRequest: POST '/admin/product/brand/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 18,
+      "event": "call",
+      "thread_id": 1,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_change_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 547
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2460819059024,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2460819279104,
+          "value": "'product.change_brand'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 19,
+      "event": "call",
+      "thread_id": 1,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 19,
+      "elapsed": 0,
+      "id": 20,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 18,
+      "elapsed": 0.0010159015655517578,
+      "id": 21,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2460800208016,
+        "value": "<ModelAdmin: model=Brand site=AdminSite(name='admin')>",
+        "name": "self",
+        "class": "django.contrib.admin.options.ModelAdmin"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2460811956880,
+          "value": "<WSGIRequest: POST '/admin/product/brand/add/'>",
+          "name": "request",
+          "class": "django.core.handlers.wsgi.WSGIRequest"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 22,
+      "event": "call",
+      "thread_id": 1,
+      "defined_class": "django.contrib.admin.options.BaseModelAdmin",
+      "method_id": "has_view_permission",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py",
+      "lineno": 577
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2460819059024,
+        "value": "<User: admin>",
+        "name": "self",
+        "class": "django.contrib.auth.models.User"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2460819279824,
+          "value": "'product.view_brand'",
+          "name": "perm",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140706261007560,
+          "value": "None",
+          "name": "obj",
+          "class": "builtins.NoneType"
+        }
+      ],
+      "id": 23,
+      "event": "call",
+      "thread_id": 1,
+      "defined_class": "django.contrib.auth.models.PermissionsMixin",
+      "method_id": "has_perm",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 298
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 23,
+      "elapsed": 0,
+      "id": 24,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "return_value": {
+        "object_id": 140706260953960,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 22,
+      "elapsed": 0,
+      "id": 25,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "http_server_response": {
+        "status_code": 302,
+        "mime_type": "text/html; charset=utf-8",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8",
+          "Location": "/admin/product/brand/",
+          "Expires": "Sat, 16 Dec 2023 18:06:07 GMT",
+          "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+          "X-Frame-Options": "DENY",
+          "Content-Length": "0",
+          "Vary": "Cookie",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "parent_id": 1,
+      "elapsed": 0.030999999959021807,
+      "id": 26,
+      "event": "return",
+      "thread_id": 1
+    }
+  ],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.11.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "https://github.com/IZZARA-URA/DJANGO-REACT-ECOMMERCE.git",
+      "branch": "main",
+      "commit": "b3c1cb712dcd284715a76497c6b2cd833dea647e"
+    },
+    "frameworks": [
+      {
+        "name": "Django",
+        "version": "4.2.7"
+      }
+    ],
+    "name": "POST /admin/product/brand/add/ (302) - 01:06:07.516",
+    "timestamp": 1702749967.516843,
+    "recorder": {
+      "name": "record_requests"
+    }
+  },
+  "classMap": [
+    {
+      "name": "django",
+      "type": "package",
+      "children": [
+        {
+          "name": "contrib",
+          "type": "package",
+          "children": [
+            {
+              "name": "auth",
+              "type": "package",
+              "children": [
+                {
+                  "name": "backends",
+                  "type": "package",
+                  "children": [
+                    {
+                      "name": "ModelBackend",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "user_can_authenticate",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py:55"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "models",
+                  "type": "package",
+                  "children": [
+                    {
+                      "name": "PermissionsMixin",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "has_perm",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py:298"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "admin",
+              "type": "package",
+              "children": [
+                {
+                  "name": "options",
+                  "type": "package",
+                  "children": [
+                    {
+                      "name": "BaseModelAdmin",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "has_add_permission",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py:538"
+                        },
+                        {
+                          "name": "has_change_permission",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py:547"
+                        },
+                        {
+                          "name": "has_view_permission",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\admin\\options.py:577"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /admin/product/brand/add/"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 18:06:07.478850' AND \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj') LIMIT 21"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21"
+        },
+        {
+          "type": "query",
+          "name": "BEGIN"
+        },
+        {
+          "type": "query",
+          "name": "INSERT INTO \"product_brand\" (\"name\") VALUES ('Brand-1') RETURNING \"product_brand\".\"id\""
+        },
+        {
+          "type": "query",
+          "name": "INSERT INTO \"django_admin_log\" (\"action_time\", \"user_id\", \"content_type_id\", \"object_id\", \"object_repr\", \"action_flag\", \"change_message\") VALUES ('2023-12-16 18:06:07.500840', 1, 7, '1', 'Brand-1', 1, '[{\"added\": {}}]') RETURNING \"django_admin_log\".\"id\""
+        }
+      ]
+    }
+  ]
+}

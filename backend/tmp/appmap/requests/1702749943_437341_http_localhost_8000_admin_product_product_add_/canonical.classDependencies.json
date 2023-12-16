@@ -1,0 +1,118 @@
+[
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_FormHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminColor_Theme_ToggleHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_FormHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_FormHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminNav_SidebarHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_FormHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminPrepopulated_Fields_JsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_FormHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminSubmit_LineHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminWidgetsRelated_Widget_WrapperHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListUlHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsLabelHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsCheckboxHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsTextHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsTextareaHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml#render",
+    "callee": "SELECT \"product_brand\".\"id\", \"product_brand\".\"name\" FROM \"product_brand\""
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIncludesFieldsetHtml#render",
+    "callee": "SELECT \"product_category\".\"id\", \"product_category\".\"name\", \"product_category\".\"parent_id\", \"product_category\".\"lft\", \"product_category\".\"rght\", \"product_category\".\"tree_id\", \"product_category\".\"level\" FROM \"product_category\" ORDER BY \"product_category\".\"tree_id\" ASC, \"product_category\".\"lft\" ASC"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminNav_SidebarHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminApp_ListHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsLabelHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsAttrsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsCheckboxHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsInputHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsInputHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsTextHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsInputHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsTextareaHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml#render"
+  },
+  {
+    "caller": "GET /admin/product/product/add/",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminChange_FormHtml#render"
+  },
+  {
+    "caller": "GET /admin/product/product/add/",
+    "callee": "BEGIN"
+  },
+  {
+    "caller": "GET /admin/product/product/add/",
+    "callee": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "GET /admin/product/product/add/",
+    "callee": "SELECT \"django_content_type\".\"id\", \"django_content_type\".\"app_label\", \"django_content_type\".\"model\" FROM \"django_content_type\" WHERE (\"django_content_type\".\"app_label\" = 'product' AND \"django_content_type\".\"model\" = 'product') LIMIT 21"
+  },
+  {
+    "caller": "GET /admin/product/product/add/",
+    "callee": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 18:05:43.331346' AND \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj') LIMIT 21"
+  },
+  {
+    "caller": "GET /admin/product/product/add/",
+    "callee": "django/contrib"
+  }
+]

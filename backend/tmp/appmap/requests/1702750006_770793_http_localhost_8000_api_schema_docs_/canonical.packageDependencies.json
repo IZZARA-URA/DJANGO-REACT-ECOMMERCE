@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDrf_SpectacularTemplatesDrf_SpectacularSwagger_UiHtml",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDrf_SpectacularTemplatesDrf_SpectacularSwagger_UiJs"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDrf_SpectacularTemplatesDrf_SpectacularSwagger_UiHtml"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "Database"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "django"
+  }
+]

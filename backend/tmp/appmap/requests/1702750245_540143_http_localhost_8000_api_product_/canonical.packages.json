@@ -1,0 +1,4 @@
+[
+  "backend/product/views",
+  "django/contrib/auth/backends"
+]

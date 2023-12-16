@@ -1,0 +1,34 @@
+[
+  {
+    "caller": "GET /api/product/",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkApiHtml#render"
+  },
+  {
+    "caller": "GET /api/product/",
+    "callee": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "GET /api/product/",
+    "callee": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 18:10:45.376141' AND \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj') LIMIT 21"
+  },
+  {
+    "caller": "GET /api/product/",
+    "callee": "backend/product"
+  },
+  {
+    "caller": "GET /api/product/",
+    "callee": "django/contrib"
+  },
+  {
+    "caller": "backend/product",
+    "callee": "SELECT \"product_brand\".\"id\", \"product_brand\".\"name\" FROM \"product_brand\" WHERE \"product_brand\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "backend/product",
+    "callee": "SELECT \"product_category\".\"id\", \"product_category\".\"name\", \"product_category\".\"parent_id\", \"product_category\".\"lft\", \"product_category\".\"rght\", \"product_category\".\"tree_id\", \"product_category\".\"level\" FROM \"product_category\" WHERE \"product_category\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "backend/product",
+    "callee": "SELECT \"product_product\".\"id\", \"product_product\".\"name\", \"product_product\".\"description\", \"product_product\".\"is_digital\", \"product_product\".\"brand_id\", \"product_product\".\"category_id\" FROM \"product_product\""
+  }
+]

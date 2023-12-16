@@ -1,0 +1,30 @@
+[
+  {
+    "caller": "POST /admin/login/",
+    "callee": "BEGIN"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "INSERT INTO \"django_session\" (\"session_key\", \"session_data\", \"expire_date\") VALUES ('tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj', 'e30:1rEYMQ:GVxp6CYjD6Jpab72sjfl3JymgSMKkx0RTscJKMAo15o', '2023-12-30 17:21:58.561788')"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "SELECT 1 AS \"a\" FROM \"django_session\" WHERE \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj' LIMIT 1"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "UPDATE \"auth_user\" SET \"last_login\" = '2023-12-16 17:21:58.568791' WHERE \"auth_user\".\"id\" = 1"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "UPDATE \"django_session\" SET \"session_data\" = '.eJxVjDsOwjAQRO_iGll2_Kekzxksr3eNA8iR4qRC3J1ESgHFNPPezJvFtK01bp2WOCG7Mskuvx2k_KR2AHykdp95ntu6TMAPhZ-083FGet1O9--gpl73dfFeCkHOagDQ3pqCzjmjBMhgyBaRCILyRfmMQahscE-2aRi0k4Us-3wB1qY3sg:1rEYMQ:wOr4VkqVUaji3Ca1WhkKE6pp1pq41b4qeEfmJ9_3-Zo', \"expire_date\" = '2023-12-30 17:21:58.576794' WHERE \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj'"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "django/contrib"
+  },
+  {
+    "caller": "django/contrib",
+    "callee": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"username\" = 'admin' LIMIT 21"
+  }
+]

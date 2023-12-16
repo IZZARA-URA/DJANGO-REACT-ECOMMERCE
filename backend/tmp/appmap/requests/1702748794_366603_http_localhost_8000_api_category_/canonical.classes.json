@@ -1,0 +1,4 @@
+[
+  "backend/product/views/CategoryViewSet",
+  "django/contrib/auth/backends/ModelBackend"
+]

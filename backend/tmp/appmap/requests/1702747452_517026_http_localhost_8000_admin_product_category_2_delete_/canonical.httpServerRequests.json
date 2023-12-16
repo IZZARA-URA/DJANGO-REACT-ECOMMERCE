@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /admin/product/category/{object_id}/delete/",
+    "parameters": "(csrfmiddlewaretoken,post,object_id)",
+    "status": 302
+  }
+]

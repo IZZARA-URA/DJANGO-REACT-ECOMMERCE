@@ -1,0 +1,26 @@
+[
+  {
+    "caller": "POST /admin/product/brand/add/",
+    "callee": "BEGIN"
+  },
+  {
+    "caller": "POST /admin/product/brand/add/",
+    "callee": "INSERT INTO \"django_admin_log\" (\"action_time\", \"user_id\", \"content_type_id\", \"object_id\", \"object_repr\", \"action_flag\", \"change_message\") VALUES ('2023-12-16 18:06:07.500840', 1, 7, '1', 'Brand-1', 1, '[{\"added\": {}}]') RETURNING \"django_admin_log\".\"id\""
+  },
+  {
+    "caller": "POST /admin/product/brand/add/",
+    "callee": "INSERT INTO \"product_brand\" (\"name\") VALUES ('Brand-1') RETURNING \"product_brand\".\"id\""
+  },
+  {
+    "caller": "POST /admin/product/brand/add/",
+    "callee": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "POST /admin/product/brand/add/",
+    "callee": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 18:06:07.478850' AND \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj') LIMIT 21"
+  },
+  {
+    "caller": "POST /admin/product/brand/add/",
+    "callee": "django/contrib"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "caller": "POST /admin/product/category/add/",
+    "callee": "BEGIN"
+  },
+  {
+    "caller": "POST /admin/product/category/add/",
+    "callee": "INSERT INTO \"django_admin_log\" (\"action_time\", \"user_id\", \"content_type_id\", \"object_id\", \"object_repr\", \"action_flag\", \"change_message\") VALUES ('2023-12-16 17:23:16.068302', 1, 8, '2', 'Cat', 1, '[{\"added\": {}}]') RETURNING \"django_admin_log\".\"id\""
+  },
+  {
+    "caller": "POST /admin/product/category/add/",
+    "callee": "INSERT INTO \"product_category\" (\"name\", \"parent_id\", \"lft\", \"rght\", \"tree_id\", \"level\") VALUES ('Cat', NULL, 1, 2, 2, 0) RETURNING \"product_category\".\"id\""
+  },
+  {
+    "caller": "POST /admin/product/category/add/",
+    "callee": "SELECT MAX(\"product_category\".\"tree_id\") AS \"tree_id__max\" FROM \"product_category\""
+  },
+  {
+    "caller": "POST /admin/product/category/add/",
+    "callee": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "POST /admin/product/category/add/",
+    "callee": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 17:23:16.047304' AND \"django_session\".\"session_key\" = 'tivm2hyaf2f7cyjfm4x9jzjhw52fvmgj') LIMIT 21"
+  },
+  {
+    "caller": "POST /admin/product/category/add/",
+    "callee": "django/contrib"
+  }
+]

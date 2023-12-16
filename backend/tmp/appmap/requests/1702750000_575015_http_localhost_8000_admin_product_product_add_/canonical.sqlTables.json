@@ -1,0 +1,8 @@
+[
+  "auth_user",
+  "django_admin_log",
+  "django_session",
+  "product_brand",
+  "product_category",
+  "product_product"
+]

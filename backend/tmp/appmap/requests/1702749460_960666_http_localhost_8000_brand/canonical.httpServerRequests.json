@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /brand",
+    "parameters": "()",
+    "status": 404
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /admin/product/category/add/",
+    "parameters": "()",
+    "status": 200
+  }
+]

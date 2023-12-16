@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "GET /api/",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkApiHtml#render"
+  },
+  {
+    "caller": "GET /api/",
+    "callee": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 17:16:36.958307' AND \"django_session\".\"session_key\" = 'uoqcr5cumgyifu9fi5j8yaghftdarmg4') LIMIT 21"
+  }
+]
